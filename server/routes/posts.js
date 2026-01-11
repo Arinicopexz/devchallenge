@@ -12,7 +12,7 @@ const PostSchema = new mongoose.Schema({
   contenido: { type: String, required: true },
   autor: { type: String, default: 'Anónimo' },
   fecha: { type: Date, default: Date.now },
-  // AQUÍ AGREGAMOS LA LISTA DE RESPUESTAS
+  // LISTA DE RESPUESTAS
   respuestas: [RespuestaSchema] 
 });
 

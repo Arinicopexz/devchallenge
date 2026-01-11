@@ -6,7 +6,7 @@ import { ShieldCheck, LogOut, Trash2, Zap, Plus, Users, MessageSquare } from 'lu
 const Admin = () => {
   const [usuarios, setUsuarios] = useState([]);
   const [equipos, setEquipos] = useState([]);
-  const [posts, setPosts] = useState([]); // <--- NUEVO: ESTADO PARA POSTS
+  const [posts, setPosts] = useState([]); //  ESTADO PARA POSTS
   const [nuevoEquipo, setNuevoEquipo] = useState({ nombre: '', watts: '', iconName: 'Zap' });
   const navigate = useNavigate();
 
@@ -18,7 +18,7 @@ const Admin = () => {
   const fetchData = () => {
       fetchUsers(); 
       fetchEquipos();
-      fetchPosts(); // <--- CARGAMOS POSTS AL INICIO
+      fetchPosts(); // CARGAMOS POSTS AL INICIO
   };
 
   const fetchUsers = async () => { try { const res = await fetch('http://localhost:5000/api/users'); setUsuarios(await res.json()); } catch (e) {} };

@@ -27,7 +27,7 @@ const Landing = () => {
           </p>
 
           <div className="mt-10 flex items-center justify-center gap-x-6">
-            {/* BOTÓN 1: PROBAR SIMULADOR -> LOGIN */}
+            {/* BOTÓN 1: PROBAR SIMULADOR: LOGIN */}
             <Link
               to="/login"
               className="rounded-md bg-yellow-500 px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-yellow-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-400 flex items-center gap-2"
@@ -46,7 +46,7 @@ const Landing = () => {
         </div>
       </div>
 
-      {/* Features Section (Opcional, para que no se vea vacío abajo) */}
+      {/* Features Section */}
       <div className="py-24 sm:py-32 bg-[#1e293b]/50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">

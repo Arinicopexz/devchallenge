@@ -8,7 +8,7 @@ import Admin from './pages/Admin';
 import Foro from './pages/Foro';
 import Login from './pages/Login';
 import Register from './pages/Register';
-import Nosotros from './pages/Nosotros'; // <--- ¡AQUÍ ESTÁ LA NUEVA!
+import Nosotros from './pages/Nosotros'; 
 
 // --- COMPONENTES ---
 import Navbar from './components/Navbar'; 

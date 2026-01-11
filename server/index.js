@@ -105,7 +105,7 @@ app.post('/api/login', async (req, res) => {
     } catch(e) { res.status(500).json({error: e.message}) }
 });
 
-// --- RUTA QUE TE FALTABA: ADMIN ---
+
 app.get('/api/users', async (req, res) => {
     try {
         // Pedimos la lista completa a Postgres
@@ -150,11 +150,6 @@ app.post('/api/posts/:id/respuestas', async (req, res) => {
 
 // ==========================================
 
-// ... (resto del código anterior) ...
-
-// ==========================================
-//   NUEVAS RUTAS DE PODER (DELETE) 🗑️
-// ==========================================
 
 // 1. ELIMINAR USUARIO (Postgres)
 app.delete('/api/users/:id', async (req, res) => {
@@ -178,11 +173,7 @@ app.delete('/api/posts/:id', async (req, res) => {
     }
 });
 
-// ==========================================
 
-// ==========================================
-//    NUEVO: GESTIÓN DE EQUIPOS (ADMIN) 🛠️
-// ==========================================
 
 // 1. CREAR TABLA SI NO EXISTE (Automático)
 // Esto se ejecuta una vez al iniciar para asegurar que la tabla existe

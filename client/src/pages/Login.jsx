@@ -35,7 +35,7 @@ const Login = () => {
     }
   };
 
-  // --- NUEVA FUNCIÓN: MODO ADMIN ---
+  //  MODO ADMIN ---
   const accesoAdmin = () => {
     // Pedimos una contraseña simple en una ventana emergente
     const clave = prompt("🔐 Ingrese Clave de Administrador:");

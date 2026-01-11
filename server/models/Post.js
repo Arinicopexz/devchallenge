@@ -11,9 +11,9 @@ const RespuestaSchema = new mongoose.Schema({
 const PostSchema = new mongoose.Schema({
   titulo: { type: String, required: true },
   contenido: { type: String, required: true },
-  autor: { type: String, default: 'Anónimo' }, // <--- Esto ya lo teníamos
+  autor: { type: String, default: 'Anónimo' }, 
   fecha: { type: Date, default: Date.now },
-  respuestas: [RespuestaSchema] // <--- ¡ESTO ES LO NUEVO!
+  respuestas: [RespuestaSchema] 
 });
 
 module.exports = mongoose.model('Post', PostSchema);
