@@ -1,0 +1,16 @@
+# Dependencias gigantes (No subir nunca)
+node_modules/
+*/node_modules/
+client/node_modules/
+server/node_modules/
+
+# Variables de Entorno (Claves secretas)
+.env
+*/.env
+client/.env
+server/.env
+
+# Archivos del sistema
+.DS_Store
+dist/
+build/
